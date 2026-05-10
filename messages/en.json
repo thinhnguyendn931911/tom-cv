@@ -1,0 +1,277 @@
+{
+  "Navbar": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "brand": "Thinh Nguyen"
+  },
+  "Hero": {
+    "openToOpportunities": "Open to opportunities",
+    "name": "Thinh Nguyen",
+    "role": "Senior Software Engineer",
+    "specialist": "Front-end Specialist",
+    "description_1": "8 years scaling web platforms to",
+    "description_2": "millions of users",
+    "description_3": ". Lighthouse",
+    "description_4": ">90",
+    "description_5": ". Scaled",
+    "description_6": "1 → 10 products",
+    "description_7": "in 12 months.",
+    "yearsExp": "8+",
+    "yearsExpLabel": "Years",
+    "productsShipped": "10",
+    "productsShippedLabel": "Products",
+    "lighthouseScore": "90+",
+    "lighthouseScoreLabel": "Lighthouse",
+    "teamSize": "30+",
+    "teamSizeLabel": "Team Size",
+    "contactMe": "Contact Me",
+    "viewWork": "View My Work",
+    "scroll": "Scroll"
+  },
+  "About": {
+    "title": "About",
+    "heading_1": "Building the web,",
+    "heading_2": "at scale",
+    "description": "Senior Software Engineer with 8 years of experience building high-performance, scalable web applications across front-end and full-stack environments. Specialized in <bold>Vue.js, React, Next.js, and Nuxt.js</bold> with deep expertise in shared codebase architecture — most recently scaling a front-end platform from 1 to 10 products in under a year.",
+    "location": "Da Nang, Vietnam",
+    "certification": "PMP-Certified (PMI, 2025)",
+    "award": "Outstanding Performance Award"
+  },
+  "Experience": {
+    "title": "Experience",
+    "heading_1": "Professional",
+    "heading_2": "journey",
+    "description": "8+ years of building and leading high-performance engineering teams.",
+    "viewDetails": "View details",
+    "collapse": "Collapse",
+    "roles": {
+      "lazarus": {
+        "role": "Project Manager (Technical Lead)",
+        "company": "Lazarus Tech",
+        "period": "2024 – Present",
+        "teamSize": "~30",
+        "highlights": [
+          "Scaled a chain of online game website products from 1 to 10 live products in under 12 months by architecting a shared front-end codebase (Next.js/Nuxt.js) with reusable component libraries and standardized design patterns.",
+          "Drove front-end performance initiatives achieving Lighthouse scores >90 on both desktop and mobile, improving Core Web Vitals (LCP, CLS, FID) under high-traffic conditions serving millions of users.",
+          "Delivered on-time releases across consecutive quarters by introducing structured sprint planning, blocker tracking, and engineering workflows — zero missed customer-facing deadlines.",
+          "Coordinated engineering, product, and operational stakeholders across front-end (Next.js/Nuxt.js) and back-end (PHP) modules; managed delivery risks and dependencies to ensure predictable releases."
+        ]
+      },
+      "ztech": {
+        "role": "Technical Team Leader",
+        "company": "Ztech Solutions",
+        "period": "2022 – 2024",
+        "highlights": [
+          "Architected reusable front-end structures and design patterns across multiple products, enabling faster onboarding and reducing per-project setup time significantly.",
+          "Defined and enforced Git workflow, coding conventions, and code review standards — improving consistency and engineering quality across a multi-team environment.",
+          "Ensured technical health through systematic code review and engineering standards, reducing regression bugs and improving maintainability.",
+          "Coordinated cross-team delivery to align front-end and back-end work against performance, quality, and release milestones."
+        ]
+      },
+      "hodfords": {
+        "role": "Front-end Team Leader",
+        "company": "Hodfords Vietnam",
+        "period": "2021 – 2022",
+        "teamSize": "~15",
+        "highlights": [
+          "Owned front-end system architecture and reduced technical debt by standardizing implementation patterns across the codebase.",
+          "Supervised system modifications and ensured engineering quality through structured reviews and mentoring.",
+          "Managed Agile execution to support prioritization, planning, and delivery coordination.",
+          "Hired, supervised, and mentored team members to improve delivery quality and team effectiveness."
+        ]
+      },
+      "enclave": {
+        "role": "Software Engineer",
+        "company": "Enclave Software Development Centers",
+        "period": "2015 – 2021",
+        "highlights": [
+          "Developed and maintained production modules with focus on correctness, performance, and maintainability.",
+          "Monitored system performance and supported investigation and troubleshooting with the engineering team.",
+          "Collected client requirements and translated them into engineering deliverables; received Outstanding Performance Award (2018)."
+        ]
+      }
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "heading_1": "Selected",
+    "heading_2": "work",
+    "description": "A selection of projects that showcase impact at scale, from million-user platforms to enterprise solutions.",
+    "items": {
+      "chain": {
+        "title": "Chain of Online Game Websites",
+        "company": "Million-User Platform",
+        "role": "Project Manager",
+        "teamSize": "~30",
+        "highlights": [
+          "Scaled platform from 1 to 10 live products in under 12 months with a shared front-end architecture.",
+          "Achieved Lighthouse scores >90 on desktop and mobile through systematic performance optimization.",
+          "Delivered continuous releases under high traffic for a platform serving millions of users."
+        ]
+      },
+      "diginex": {
+        "title": "Diginex ESG Platform",
+        "role": "Front-end Team Leader",
+        "teamSize": "15",
+        "highlights": [
+          "Built and delivered the Diginex ESG ecosystem: reporting, materiality prioritization, progress tracking, and climate workflows."
+        ]
+      },
+      "supply": {
+        "title": "Supply Chains Tracing Project",
+        "role": "Front-end Team Leader",
+        "teamSize": "20",
+        "highlights": [
+          "Led delivery for a platform supporting downstream tracing of goods related to child labor and forced labor compliance."
+        ]
+      },
+      "qnet": {
+        "title": "QNet Reporting System",
+        "company": "Ford Motor Company",
+        "role": "Front-end TL & Software Engineer",
+        "teamSize": "12",
+        "highlights": [
+          "Delivered and evolved enterprise reporting workflows (designer, reader, data provider) in partnership with Ford Motor Company."
+        ]
+      },
+      "zmining": {
+        "title": "ZMining Ecosystem",
+        "role": "Front-end Team Leader",
+        "teamSize": "20",
+        "highlights": [
+          "Led front-end structure and delivery for automation workflows across desktop and browser environments."
+        ]
+      }
+    }
+  },
+  "Skills": {
+    "title": "Skills",
+    "heading_1": "Technical",
+    "heading_2": "expertise",
+    "coreCompetenciesTitle": "Core Competencies",
+    "coreCompetencies": [
+      "High-performance web delivery (Lighthouse >90, Core Web Vitals optimization)",
+      "Shared/reusable codebase architecture (scaled 1 → 10 products in 12 months)",
+      "Technical leadership & mentoring (teams up to ~20)",
+      "System architecture & reusable design patterns",
+      "Engineering standards, code review quality & DX tooling",
+      "Agile execution, sprint planning & delivery coordination",
+      "Stakeholder alignment & cross-team communication"
+    ],
+    "categories": {
+      "languages": {
+        "name": "Languages / Runtime",
+        "skills": ["TypeScript", "JavaScript", "Node.js", "PHP"]
+      },
+      "frontend": {
+        "name": "Front-end",
+        "skills": [
+          "Vue.js (2/3)",
+          "React.js",
+          "Next.js",
+          "Nuxt.js",
+          "HTML",
+          "SCSS",
+          "CSS",
+          "jQuery"
+        ]
+      },
+      "backend": {
+        "name": "Back-end",
+        "skills": ["Express.js", "Nest.js", "PHP"]
+      },
+      "desktop": {
+        "name": "Desktop",
+        "skills": ["Electron"]
+      },
+      "database": {
+        "name": "Database",
+        "skills": ["MongoDB", "MySQL", "SQLite"]
+      },
+      "ui": {
+        "name": "UI Frameworks",
+        "skills": [
+          "Ant Design",
+          "Element Plus",
+          "Kendo UI",
+          "Bootstrap",
+          "Tailwind CSS"
+        ]
+      },
+      "build": {
+        "name": "Build Tools",
+        "skills": ["Vite", "Webpack", "Rollup"]
+      },
+      "testing": {
+        "name": "Testing",
+        "skills": ["Jest", "Vitest"]
+      },
+      "quality": {
+        "name": "Quality & Automation",
+        "skills": ["ESLint", "Prettier", "SonarQube", "HTMLHint", "Stylint"]
+      },
+      "auth": {
+        "name": "Auth & Security",
+        "skills": ["OAuth", "OAuth 2.0", "SSO"]
+      },
+      "version": {
+        "name": "Version Control",
+        "skills": ["GitLab", "Bitbucket"]
+      },
+      "other": {
+        "name": "Other",
+        "skills": [
+          "Responsive Web Design",
+          "Figma",
+          "Selenium",
+          "i18next",
+          "styled-components"
+        ]
+      }
+    }
+  },
+  "Achievements": {
+    "title": "Achievements",
+    "heading_1": "Certifications &",
+    "heading_2": "awards",
+    "items": {
+      "pmp": {
+        "title": "PMP Certified",
+        "subtitle": "Project Management Professional",
+        "detail": "PMI · 2025"
+      },
+      "award": {
+        "title": "Outstanding Performance",
+        "subtitle": "Award",
+        "detail": "Enclave · 2018"
+      },
+      "lighthouse": {
+        "title": "Lighthouse >90",
+        "subtitle": "Desktop & Mobile",
+        "detail": "Core Web Vitals optimized"
+      },
+      "education": {
+        "title": "Management Information Systems",
+        "subtitle": "Duy Tan University",
+        "detail": "Da Nang · 2011–2015"
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contact",
+    "heading_1": "Let's",
+    "heading_2": "connect",
+    "description": "I'm open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out.",
+    "location": "Da Nang, Vietnam",
+    "sendEmail": "Send me an email",
+    "lang_vi": "🇻🇳 Vietnamese — Native",
+    "lang_en": "🇬🇧 English — Professional"
+  },
+  "Footer": {
+    "copyright": "Thinh Nguyen. Built with Next.js, Tailwind CSS & shadcn/ui.",
+    "location": "Da Nang, Vietnam"
+  }
+}

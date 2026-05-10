@@ -1,0 +1,277 @@
+{
+  "Navbar": {
+    "about": "Giới thiệu",
+    "experience": "Kinh nghiệm",
+    "projects": "Dự án",
+    "skills": "Kỹ năng",
+    "contact": "Liên hệ",
+    "brand": "Thịnh Nguyễn"
+  },
+  "Hero": {
+    "openToOpportunities": "Sẵn sàng đón nhận cơ hội mới",
+    "name": "Thịnh Nguyễn",
+    "role": "Kỹ sư Phần mềm Cao cấp",
+    "specialist": "Chuyên gia Front-end",
+    "description_1": "8 năm xây dựng các nền tảng web phục vụ",
+    "description_2": "hàng triệu người dùng",
+    "description_3": ". Lighthouse",
+    "description_4": ">90",
+    "description_5": ". Mở rộng",
+    "description_6": "từ 1 lên 10 sản phẩm",
+    "description_7": "trong 12 tháng.",
+    "yearsExp": "8+",
+    "yearsExpLabel": "Năm",
+    "productsShipped": "10",
+    "productsShippedLabel": "Sản phẩm",
+    "lighthouseScore": "90+",
+    "lighthouseScoreLabel": "Lighthouse",
+    "teamSize": "30+",
+    "teamSizeLabel": "Quy mô nhóm",
+    "contactMe": "Liên hệ",
+    "viewWork": "Xem dự án",
+    "scroll": "Cuộn xuống"
+  },
+  "About": {
+    "title": "Giới thiệu",
+    "heading_1": "Xây dựng web,",
+    "heading_2": "ở quy mô lớn",
+    "description": "Kỹ sư Phần mềm Cao cấp với 8 năm kinh nghiệm xây dựng các ứng dụng web hiệu năng cao, dễ mở rộng trên cả môi trường front-end và full-stack. Chuyên sâu về <bold>Vue.js, React, Next.js và Nuxt.js</bold> với kiến thức vững chắc về kiến trúc chia sẻ mã nguồn — gần đây nhất đã mở rộng nền tảng front-end từ 1 lên 10 sản phẩm trong vòng chưa đầy một năm.",
+    "location": "Đà Nẵng, Việt Nam",
+    "certification": "Chứng chỉ PMP (PMI, 2025)",
+    "award": "Giải thưởng Hiệu suất Xuất sắc"
+  },
+  "Experience": {
+    "title": "Kinh nghiệm",
+    "heading_1": "Hành trình",
+    "heading_2": "sự nghiệp",
+    "description": "Hơn 8 năm xây dựng và dẫn dắt các nhóm kỹ thuật hiệu suất cao.",
+    "viewDetails": "Xem chi tiết",
+    "collapse": "Thu gọn",
+    "roles": {
+      "lazarus": {
+        "role": "Quản lý Dự án (Technical Lead)",
+        "company": "Lazarus Tech",
+        "period": "2024 – Hiện tại",
+        "teamSize": "~30",
+        "highlights": [
+          "Mở rộng chuỗi sản phẩm trang web game trực tuyến từ 1 lên 10 sản phẩm hoạt động trong chưa đầy 12 tháng bằng cách xây dựng kiến trúc front-end dùng chung (Next.js/Nuxt.js) với các thư viện component có thể tái sử dụng và các mẫu thiết kế chuẩn hóa.",
+          "Thúc đẩy các sáng kiến hiệu suất front-end đạt điểm số Lighthouse >90 trên cả máy tính và thiết bị di động, cải thiện Core Web Vitals (LCP, CLS, FID) trong điều kiện lưu lượng truy cập cao phục vụ hàng triệu người dùng.",
+          "Đảm bảo phát hành đúng hạn qua các quý liên tiếp bằng cách giới thiệu quy trình lập kế hoạch sprint có cấu trúc, theo dõi các trở ngại và quy trình làm việc kỹ thuật — không bỏ lỡ bất kỳ thời hạn nào với khách hàng.",
+          "Điều phối các bên liên quan về kỹ thuật, sản phẩm và vận hành trên cả module front-end (Next.js/Nuxt.js) và back-end (PHP); quản lý rủi ro giao hàng và các phụ thuộc để đảm bảo việc phát hành có thể dự đoán được."
+        ]
+      },
+      "ztech": {
+        "role": "Trưởng nhóm Kỹ thuật",
+        "company": "Ztech Solutions",
+        "period": "2022 – 2024",
+        "highlights": [
+          "Thiết kế cấu trúc front-end và các mẫu thiết kế có thể tái sử dụng trên nhiều sản phẩm, giúp quá trình onboarding nhanh hơn và giảm đáng kể thời gian thiết lập cho mỗi dự án.",
+          "Định nghĩa và thực thi luồng làm việc Git, các quy ước viết mã và tiêu chuẩn đánh giá mã nguồn — cải thiện tính nhất quán và chất lượng kỹ thuật trong một môi trường làm việc đa nhóm.",
+          "Đảm bảo sự ổn định kỹ thuật thông qua đánh giá mã nguồn có hệ thống và các tiêu chuẩn kỹ thuật, giảm thiểu lỗi hồi quy và cải thiện khả năng bảo trì.",
+          "Điều phối việc bàn giao chéo giữa các nhóm để điều chỉnh công việc front-end và back-end theo các cột mốc về hiệu suất, chất lượng và phát hành."
+        ]
+      },
+      "hodfords": {
+        "role": "Trưởng nhóm Front-end",
+        "company": "Hodfords Vietnam",
+        "period": "2021 – 2022",
+        "teamSize": "~15",
+        "highlights": [
+          "Làm chủ kiến trúc hệ thống front-end và giảm thiểu nợ kỹ thuật (technical debt) bằng cách chuẩn hóa các mẫu thiết kế trên toàn bộ mã nguồn.",
+          "Giám sát các sửa đổi hệ thống và đảm bảo chất lượng kỹ thuật thông qua các quy trình đánh giá và hướng dẫn có cấu trúc.",
+          "Quản lý thực thi quy trình Agile để hỗ trợ ưu tiên, lập kế hoạch và điều phối việc phát hành.",
+          "Tuyển dụng, giám sát và hướng dẫn các thành viên trong nhóm nhằm cải thiện chất lượng công việc và hiệu quả làm việc nhóm."
+        ]
+      },
+      "enclave": {
+        "role": "Kỹ sư Phần mềm",
+        "company": "Enclave Software Development Centers",
+        "period": "2015 – 2021",
+        "highlights": [
+          "Phát triển và bảo trì các module sản phẩm với sự chú trọng vào tính chính xác, hiệu suất và khả năng bảo trì.",
+          "Giám sát hiệu suất hệ thống, đồng thời hỗ trợ tìm hiểu và khắc phục sự cố cùng nhóm kỹ thuật.",
+          "Thu thập yêu cầu từ khách hàng và chuyển đổi chúng thành các tính năng kỹ thuật cụ thể; nhận được Giải thưởng Hiệu suất Xuất sắc (2018)."
+        ]
+      }
+    }
+  },
+  "Projects": {
+    "title": "Dự án",
+    "heading_1": "Dự án",
+    "heading_2": "tiêu biểu",
+    "description": "Các dự án thể hiện tác động ở quy mô lớn, từ các nền tảng hàng triệu người dùng đến các giải pháp doanh nghiệp.",
+    "items": {
+      "chain": {
+        "title": "Chuỗi website game trực tuyến",
+        "company": "Nền tảng triệu người dùng",
+        "role": "Quản lý Dự án",
+        "teamSize": "~30",
+        "highlights": [
+          "Mở rộng nền tảng từ 1 lên 10 sản phẩm hoạt động trong chưa đầy 12 tháng với kiến trúc front-end dùng chung.",
+          "Đạt điểm số Lighthouse >90 trên máy tính và thiết bị di động thông qua các chiến lược tối ưu hóa hiệu suất có hệ thống.",
+          "Phát hành sản phẩm liên tục dưới điều kiện lưu lượng truy cập cao cho một nền tảng phục vụ hàng triệu người dùng."
+        ]
+      },
+      "diginex": {
+        "title": "Nền tảng ESG Diginex",
+        "role": "Trưởng nhóm Front-end",
+        "teamSize": "15",
+        "highlights": [
+          "Xây dựng và phát hành hệ sinh thái ESG của Diginex: báo cáo, ưu tiên vấn đề trọng yếu, theo dõi tiến độ và quy trình công việc về khí hậu."
+        ]
+      },
+      "supply": {
+        "title": "Dự án truy xuất chuỗi cung ứng",
+        "role": "Trưởng nhóm Front-end",
+        "teamSize": "20",
+        "highlights": [
+          "Dẫn dắt việc bàn giao nền tảng hỗ trợ truy xuất nguồn gốc sản phẩm về hạ nguồn liên quan đến sự tuân thủ về lao động trẻ em và lao động cưỡng bức."
+        ]
+      },
+      "qnet": {
+        "title": "Hệ thống báo cáo QNet",
+        "company": "Ford Motor Company",
+        "role": "Trưởng nhóm Front-end & Kỹ sư PM",
+        "teamSize": "12",
+        "highlights": [
+          "Phát hành và phát triển các quy trình báo cáo cấp doanh nghiệp (thiết kế, đọc, cung cấp dữ liệu) hợp tác với Ford Motor Company."
+        ]
+      },
+      "zmining": {
+        "title": "Hệ sinh thái ZMining",
+        "role": "Trưởng nhóm Front-end",
+        "teamSize": "20",
+        "highlights": [
+          "Dẫn dắt cấu trúc front-end và bàn giao các luồng công việc tự động hóa trên cả môi trường desktop và trình duyệt."
+        ]
+      }
+    }
+  },
+  "Skills": {
+    "title": "Kỹ năng",
+    "heading_1": "Chuyên môn",
+    "heading_2": "kỹ thuật",
+    "coreCompetenciesTitle": "Năng lực cốt lõi",
+    "coreCompetencies": [
+      "Xây dựng web hiệu suất cao (Lighthouse >90, tối ưu Core Web Vitals)",
+      "Kiến trúc mã nguồn chia sẻ/tái sử dụng (mở rộng từ 1 → 10 sản phẩm trong 12 tháng)",
+      "Lãnh đạo và hướng dẫn kỹ thuật (quy mô nhóm ~20 người)",
+      "Kiến trúc hệ thống và các mẫu thiết kế tái sử dụng",
+      "Tiêu chuẩn kỹ thuật, chất lượng code review & bộ công cụ DX",
+      "Quản lý Agile, lập kế hoạch sprint và điều phối phát hành",
+      "Liên kết các bên liên quan & giao tiếp liên phòng ban"
+    ],
+    "categories": {
+      "languages": {
+        "name": "Ngôn ngữ / Runtime",
+        "skills": ["TypeScript", "JavaScript", "Node.js", "PHP"]
+      },
+      "frontend": {
+        "name": "Front-end",
+        "skills": [
+          "Vue.js (2/3)",
+          "React.js",
+          "Next.js",
+          "Nuxt.js",
+          "HTML",
+          "SCSS",
+          "CSS",
+          "jQuery"
+        ]
+      },
+      "backend": {
+        "name": "Back-end",
+        "skills": ["Express.js", "Nest.js", "PHP"]
+      },
+      "desktop": {
+        "name": "Desktop",
+        "skills": ["Electron"]
+      },
+      "database": {
+        "name": "Cơ sở dữ liệu",
+        "skills": ["MongoDB", "MySQL", "SQLite"]
+      },
+      "ui": {
+        "name": "Framework Giao diện",
+        "skills": [
+          "Ant Design",
+          "Element Plus",
+          "Kendo UI",
+          "Bootstrap",
+          "Tailwind CSS"
+        ]
+      },
+      "build": {
+        "name": "Công cụ Build",
+        "skills": ["Vite", "Webpack", "Rollup"]
+      },
+      "testing": {
+        "name": "Kiểm thử",
+        "skills": ["Jest", "Vitest"]
+      },
+      "quality": {
+        "name": "Chất lượng & Tự động hóa",
+        "skills": ["ESLint", "Prettier", "SonarQube", "HTMLHint", "Stylint"]
+      },
+      "auth": {
+        "name": "Xác thực & Bảo mật",
+        "skills": ["OAuth", "OAuth 2.0", "SSO"]
+      },
+      "version": {
+        "name": "Quản lý phiên bản",
+        "skills": ["GitLab", "Bitbucket"]
+      },
+      "other": {
+        "name": "Khác",
+        "skills": [
+          "Thiết kế Web Đáp ứng",
+          "Figma",
+          "Selenium",
+          "i18next",
+          "styled-components"
+        ]
+      }
+    }
+  },
+  "Achievements": {
+    "title": "Thành tựu",
+    "heading_1": "Chứng chỉ &",
+    "heading_2": "giải thưởng",
+    "items": {
+      "pmp": {
+        "title": "Chứng chỉ PMP",
+        "subtitle": "Chuyên gia Quản lý Dự án",
+        "detail": "PMI · 2025"
+      },
+      "award": {
+        "title": "Hiệu suất Xuất sắc",
+        "subtitle": "Giải thưởng",
+        "detail": "Enclave · 2018"
+      },
+      "lighthouse": {
+        "title": "Lighthouse >90",
+        "subtitle": "Máy tính & Di động",
+        "detail": "Đã tối ưu Core Web Vitals"
+      },
+      "education": {
+        "title": "Hệ thống Thông tin Quản lý",
+        "subtitle": "Đại học Duy Tân",
+        "detail": "Đà Nẵng · 2011–2015"
+      }
+    }
+  },
+  "Contact": {
+    "title": "Liên hệ",
+    "heading_1": "Hãy",
+    "heading_2": "kết nối",
+    "description": "Tôi luôn sẵn sàng đón nhận những cơ hội mới. Dù bạn có câu hỏi gì hay chỉ muốn gửi lời chào, đừng ngần ngại liên hệ với tôi.",
+    "location": "Đà Nẵng, Việt Nam",
+    "sendEmail": "Gửi email cho tôi",
+    "lang_vi": "🇻🇳 Tiếng Việt — Bản ngữ",
+    "lang_en": "🇬🇧 Tiếng Anh — Thành thạo"
+  },
+  "Footer": {
+    "copyright": "Thịnh Nguyễn. Xây dựng bằng Next.js, Tailwind CSS & shadcn/ui.",
+    "location": "Đà Nẵng, Việt Nam"
+  }
+}
