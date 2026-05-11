@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Award, GraduationCap, Trophy, Gauge } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -39,7 +39,7 @@ export function Achievements() {
     <section className="py-16 px-6 relative">
       <div className="absolute inset-0 grid-pattern opacity-30" />
       <div className="relative mx-auto max-w-4xl">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -53,11 +53,11 @@ export function Achievements() {
             {t("heading_1")}{" "}
             <span className="gradient-text">{t("heading_2")}</span>
           </h3>
-        </motion.div>
+        </m.div>
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {achievements.map((item, i) => (
-            <motion.div
+            <m.div
               key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +75,7 @@ export function Achievements() {
                   {item.detail}
                 </Badge>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

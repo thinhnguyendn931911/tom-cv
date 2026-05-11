@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Mail, Phone, MapPin } from "lucide-react";
@@ -11,7 +11,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-16 px-6">
       <div className="mx-auto max-w-4xl">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -28,9 +28,9 @@ export function Contact() {
           <p className="mt-3 text-muted-foreground max-w-lg mx-auto">
             {t("description")}
           </p>
-        </motion.div>
+        </m.div>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
@@ -95,7 +95,7 @@ export function Contact() {
             <span className="w-px h-4 bg-border" />
             <span>{t("lang_en")}</span>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

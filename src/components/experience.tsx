@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Users, ChevronDown } from "lucide-react";
 import { useState } from "react";
@@ -24,7 +24,7 @@ function TimelineEntry({
   const [expanded, setExpanded] = useState(index === 0);
 
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -74,7 +74,7 @@ function TimelineEntry({
 
         {/* Expandable highlights */}
         {expanded && (
-          <motion.ul
+          <m.ul
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             transition={{ duration: 0.3 }}
@@ -88,10 +88,10 @@ function TimelineEntry({
                 {h}
               </li>
             ))}
-          </motion.ul>
+          </m.ul>
         )}
       </div>
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -102,7 +102,7 @@ export function Experience() {
   return (
     <section id="experience" className="py-16 px-6">
       <div className="mx-auto max-w-4xl">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -116,7 +116,7 @@ export function Experience() {
             <span className="gradient-text">{t("heading_2")}</span>
           </h3>
           <p className="mt-3 text-muted-foreground">{t("description")}</p>
-        </motion.div>
+        </m.div>
 
         <div className="mt-12">
           {roles.map((key, i) => {

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowDown, Mail, Sparkles } from "lucide-react";
@@ -34,17 +34,17 @@ export function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Parallax background layer */}
-      <motion.div style={{ y }} className="absolute inset-0">
+      <m.div style={{ y }} className="absolute inset-0">
         {/* Mesh gradient */}
         <div className="absolute inset-0 hero-gradient" />
 
         {/* Animated glowing orbs */}
-        <motion.div
+        <m.div
           animate={{ scale: [1, 1.15, 1], opacity: [0.4, 0.6, 0.4] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           className="absolute top-[-10%] left-[15%] w-[500px] h-[500px] rounded-full bg-[oklch(0.45_0.18_265/12%)] blur-[100px]"
         />
-        <motion.div
+        <m.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
           transition={{
             duration: 10,
@@ -54,7 +54,7 @@ export function Hero() {
           }}
           className="absolute bottom-[-5%] right-[10%] w-[450px] h-[450px] rounded-full bg-[oklch(0.55_0.22_300/10%)] blur-[100px]"
         />
-        <motion.div
+        <m.div
           animate={{ scale: [1, 1.1, 1], opacity: [0.25, 0.45, 0.25] }}
           transition={{
             duration: 12,
@@ -67,12 +67,12 @@ export function Hero() {
 
         {/* Grid pattern */}
         <div className="absolute inset-0 grid-pattern opacity-60" />
-      </motion.div>
+      </m.div>
 
       {/* Floating tech tags — desktop only */}
       <div className="absolute inset-0 hidden lg:block pointer-events-none">
         {floatingTags.map((tag) => (
-          <motion.div
+          <m.div
             key={tag.label}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -80,7 +80,7 @@ export function Hero() {
             style={{ left: tag.x, top: tag.y }}
             className="absolute"
           >
-            <motion.span
+            <m.span
               animate={{ y: [0, -6, 0] }}
               transition={{
                 duration: 4 + Math.random() * 2,
@@ -90,18 +90,18 @@ export function Hero() {
               className="inline-flex items-center px-3 py-1.5 rounded-full border border-border bg-card/60 backdrop-blur-sm text-xs font-medium text-muted-foreground shadow-sm"
             >
               {tag.label}
-            </motion.span>
-          </motion.div>
+            </m.span>
+          </m.div>
         ))}
       </div>
 
       {/* Main content */}
-      <motion.div
+      <m.div
         style={{ opacity }}
         className="relative z-10 mx-auto max-w-4xl px-6 text-center"
       >
         {/* Status badge */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -113,31 +113,25 @@ export function Hero() {
             </span>
             {t("openToOpportunities")}
           </span>
-        </motion.div>
+        </m.div>
 
-        {/* Name — word-by-word reveal */}
+        {/* Name — word-by-word reveal (Pure CSS for optimal LCP) */}
         <h1 className="mt-6 text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.2]">
           <span className="flex flex-wrap justify-center gap-x-4">
             {nameWords.map((word, i) => (
-              <motion.span
+              <span
                 key={word}
-                initial={{ opacity: 0, y: 40, filter: "blur(12px)" }}
-                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                transition={{
-                  duration: 0.6,
-                  delay: 0.3 + i * 0.15,
-                  ease: [0.16, 1, 0.3, 1],
-                }}
-                className="gradient-text pb-2 block"
+                className="gradient-text pb-2 block hero-text-reveal"
+                style={{ animationDelay: `${i * 0.1}s` }}
               >
                 {word}
-              </motion.span>
+              </span>
             ))}
           </span>
         </h1>
 
         {/* Role line */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.65 }}
@@ -150,10 +144,10 @@ export function Hero() {
             {t("specialist")}
           </p>
           <div className="h-px w-12 bg-gradient-to-l from-transparent to-border" />
-        </motion.div>
+        </m.div>
 
         {/* Value prop */}
-        <motion.p
+        <m.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.75 }}
@@ -172,10 +166,10 @@ export function Hero() {
             {t("description_6")}
           </span>{" "}
           {t("description_7")}
-        </motion.p>
+        </m.p>
 
         {/* Stats row */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.85 }}
@@ -196,10 +190,10 @@ export function Hero() {
               </div>
             </div>
           ))}
-        </motion.div>
+        </m.div>
 
         {/* CTAs */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.95 }}
@@ -230,11 +224,11 @@ export function Hero() {
             <Sparkles className="h-4 w-4" />
             {t("viewWork")}
           </a>
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
 
       {/* Scroll indicator */}
-      <motion.div
+      <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.4 }}
@@ -243,13 +237,13 @@ export function Hero() {
         <span className="text-xs text-muted-foreground/50 tracking-widest uppercase">
           {t("scroll")}
         </span>
-        <motion.div
+        <m.div
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
         >
           <ArrowDown className="h-4 w-4 text-muted-foreground/40" />
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
     </section>
   );
 }

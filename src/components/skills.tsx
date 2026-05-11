@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Zap } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -26,7 +26,7 @@ export function Skills() {
   return (
     <section id="skills" className="py-16 px-6">
       <div className="mx-auto max-w-6xl">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -40,10 +40,10 @@ export function Skills() {
             {t("heading_1")}{" "}
             <span className="gradient-text">{t("heading_2")}</span>
           </h3>
-        </motion.div>
+        </m.div>
 
         {/* Core competencies */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
@@ -67,7 +67,7 @@ export function Skills() {
               </Badge>
             ))}
           </div>
-        </motion.div>
+        </m.div>
 
         {/* Skill categories grid */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -75,7 +75,7 @@ export function Skills() {
             const name = t(`categories.${key}.name`);
             const skills: string[] = t.raw(`categories.${key}.skills`);
             return (
-              <motion.div
+              <m.div
                 key={key}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -97,7 +97,7 @@ export function Skills() {
                     </Badge>
                   ))}
                 </div>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { MapPin, Briefcase, Award } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -9,7 +9,7 @@ export function About() {
   return (
     <section id="about" className="py-16 px-6">
       <div className="mx-auto max-w-4xl">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -22,9 +22,9 @@ export function About() {
             {t("heading_1")}{" "}
             <span className="gradient-text">{t("heading_2")}</span>
           </h3>
-        </motion.div>
+        </m.div>
 
-        <motion.p
+        <m.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
@@ -33,7 +33,7 @@ export function About() {
           dangerouslySetInnerHTML={{ __html: t.raw("description") }}
         />
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -62,7 +62,7 @@ export function About() {
               {item.label}
             </div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

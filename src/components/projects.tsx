@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import {
   Users,
@@ -48,7 +48,7 @@ export function Projects() {
       <div className="absolute inset-0 grid-pattern opacity-50" />
 
       <div className="relative mx-auto max-w-6xl">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -65,7 +65,7 @@ export function Projects() {
           <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
             {t("description")}
           </p>
-        </motion.div>
+        </m.div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projectKeys.map((key, i) => {
@@ -73,7 +73,7 @@ export function Projects() {
             const highlights: string[] = t.raw(`items.${key}.highlights`);
 
             return (
-              <motion.div
+              <m.div
                 key={key}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -137,7 +137,7 @@ export function Projects() {
                     </Badge>
                   ))}
                 </div>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>
