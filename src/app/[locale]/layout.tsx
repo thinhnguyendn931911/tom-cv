@@ -9,6 +9,7 @@ import { MotionProvider } from "@/components/motion-provider";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import { LazyLoadOnInteraction } from "@/components/lazy-load-on-interaction";
+import { SafariRefresher } from "@/components/safari-refresher";
 import "../globals.css";
 
 const montserrat = Montserrat({
@@ -32,7 +33,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${t("name")} — Portfolio`,
       description: t("description_1") + " " + t("description_2"),
-      url: "https://thinhnguyen.dev",
+      url: process.env.NEXT_PUBLIC_SITE_URL,
       siteName: t("name"),
       images: [
         {
@@ -96,10 +97,11 @@ export default async function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        <SafariRefresher />
         <MotionProvider>
           <ThemeProvider
             attribute="class"
-            defaultTheme="light"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >

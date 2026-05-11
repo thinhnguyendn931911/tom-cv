@@ -1,6 +1,6 @@
 "use client";
 
-import { m } from "framer-motion";
+import { m } from "motion/react";
 import { Badge } from "@/components/ui/badge";
 import { Zap } from "lucide-react";
 import { useTranslations } from "next-intl";

@@ -1,6 +1,6 @@
 "use client";
 
-import { m } from "framer-motion";
+import { m } from "motion/react";
 import { Badge } from "@/components/ui/badge";
 import { Users, ChevronDown } from "lucide-react";
 import { useState } from "react";

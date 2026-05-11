@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl">
         <Separator className="mb-8" />
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>
+          <p className="text-center md:text-left">
             © {new Date().getFullYear()} {t("copyright")}
           </p>
           <p>{t("location")}</p>
