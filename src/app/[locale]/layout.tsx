@@ -7,6 +7,8 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { MotionProvider } from "@/components/motion-provider";
 import { notFound } from "next/navigation";
+import Script from "next/script";
+import { LazyLoadOnInteraction } from "@/components/lazy-load-on-interaction";
 import "../globals.css";
 
 const montserrat = Montserrat({
@@ -72,7 +74,28 @@ export default async function RootLayout({
       className={`${montserrat.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        <LazyLoadOnInteraction>
+          <Script id="google-tag-manager" strategy="afterInteractive">
+            {`
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
+            `}
+          </Script>
+        </LazyLoadOnInteraction>
+      </head>
       <body className="min-h-full flex flex-col">
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <MotionProvider>
           <ThemeProvider
             attribute="class"
