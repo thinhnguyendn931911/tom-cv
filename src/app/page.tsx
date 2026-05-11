@@ -1,6 +1,7 @@
-import { redirect } from "next/navigation";
-import { routing } from "@/i18n/routing";
 
 export default function RootPage() {
-  redirect(`/${routing.defaultLocale}`);
+  return <div>
+    <h1>Hello World</h1>
+    <p>This is the homepage</p>
+  </div>
 }
