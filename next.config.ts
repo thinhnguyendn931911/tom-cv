@@ -13,8 +13,7 @@ const nextConfig: NextConfig = {
     inlineCss: true,
     optimizeCss: true,
     optimizeServerReact: true,
-    optimizePackageImports: ['react', 'framer-motion', 'lucide-react'],
-
+    optimizePackageImports: ["react", "framer-motion", "lucide-react"],
   },
 };
 

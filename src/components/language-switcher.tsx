@@ -28,11 +28,11 @@ export function LanguageSwitcher() {
           variant: "ghost",
           size: "sm",
           className:
-            "font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer gap-2",
+            "text-muted-foreground hover:text-foreground cursor-pointer gap-2 font-medium transition-colors",
         })}
       >
         <Globe className="h-4 w-4" />
-        <span className="uppercase text-xs">{locale}</span>
+        <span className="text-xs uppercase">{locale}</span>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem

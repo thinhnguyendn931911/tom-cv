@@ -36,8 +36,8 @@ export function Achievements() {
   ];
 
   return (
-    <section className="py-16 px-6 relative">
-      <div className="absolute inset-0 grid-pattern opacity-30" />
+    <section className="relative px-6 py-16">
+      <div className="grid-pattern absolute inset-0 opacity-30" />
       <div className="relative mx-auto max-w-4xl">
         <m.div
           initial={{ opacity: 0, y: 30 }}
@@ -46,16 +46,16 @@ export function Achievements() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center"
         >
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+          <h2 className="text-primary mb-2 text-sm font-semibold tracking-widest uppercase">
             {t("title")}
           </h2>
-          <h3 className="text-3xl sm:text-4xl font-bold tracking-tight">
+          <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("heading_1")}{" "}
             <span className="gradient-text">{t("heading_2")}</span>
           </h3>
         </m.div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {achievements.map((item, i) => (
             <m.div
               key={item.title}
@@ -63,14 +63,14 @@ export function Achievements() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
               viewport={{ once: true, margin: "-50px" }}
-              className="flex items-start gap-3 p-4 rounded-xl border border-border bg-card/50 hover:bg-card hover:border-primary/20 transition-all"
+              className="border-border bg-card/50 hover:bg-card hover:border-primary/20 flex items-start gap-3 rounded-xl border p-4 transition-all"
             >
-              <div className="p-2.5 rounded-lg bg-primary/10 text-primary shrink-0">
+              <div className="bg-primary/10 text-primary shrink-0 rounded-lg p-2.5">
                 <item.icon className="h-5 w-5" />
               </div>
               <div>
-                <h4 className="font-semibold text-foreground">{item.title}</h4>
-                <p className="text-sm text-muted-foreground">{item.subtitle}</p>
+                <h4 className="text-foreground font-semibold">{item.title}</h4>
+                <p className="text-muted-foreground text-sm">{item.subtitle}</p>
                 <Badge variant="secondary" className="mt-2 text-xs font-normal">
                   {item.detail}
                 </Badge>

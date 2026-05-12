@@ -31,18 +31,18 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
       {/* Parallax background layer */}
       <motion.div style={{ y }} className="absolute inset-0">
         {/* Mesh gradient */}
-        <div className="absolute inset-0 hero-gradient" />
+        <div className="hero-gradient absolute inset-0" />
 
         {/* Animated glowing orbs */}
         <motion.div
           animate={{ scale: [1, 1.15, 1], opacity: [0.4, 0.6, 0.4] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[-10%] left-[15%] w-[500px] h-[500px] rounded-full bg-[oklch(0.45_0.18_265/12%)] blur-[100px]"
+          className="absolute top-[-10%] left-[15%] h-[500px] w-[500px] rounded-full bg-[oklch(0.45_0.18_265/12%)] blur-[100px]"
         />
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -52,7 +52,7 @@ export function Hero() {
             ease: "easeInOut",
             delay: 2,
           }}
-          className="absolute bottom-[-5%] right-[10%] w-[450px] h-[450px] rounded-full bg-[oklch(0.55_0.22_300/10%)] blur-[100px]"
+          className="absolute right-[10%] bottom-[-5%] h-[450px] w-[450px] rounded-full bg-[oklch(0.55_0.22_300/10%)] blur-[100px]"
         />
         <motion.div
           animate={{ scale: [1, 1.1, 1], opacity: [0.25, 0.45, 0.25] }}
@@ -62,15 +62,15 @@ export function Hero() {
             ease: "easeInOut",
             delay: 4,
           }}
-          className="absolute top-[40%] right-[25%] w-[300px] h-[300px] rounded-full bg-[oklch(0.70_0.14_180/8%)] blur-[80px]"
+          className="absolute top-[40%] right-[25%] h-[300px] w-[300px] rounded-full bg-[oklch(0.70_0.14_180/8%)] blur-[80px]"
         />
 
         {/* Grid pattern */}
-        <div className="absolute inset-0 grid-pattern opacity-60" />
+        <div className="grid-pattern absolute inset-0 opacity-60" />
       </motion.div>
 
       {/* Floating tech tags — desktop only */}
-      <div className="absolute inset-0 hidden lg:block pointer-events-none">
+      <div className="pointer-events-none absolute inset-0 hidden lg:block">
         {floatingTags.map((tag) => (
           <motion.div
             key={tag.label}
@@ -87,7 +87,7 @@ export function Hero() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="inline-flex items-center px-3 py-1.5 rounded-full border border-border bg-card/60 backdrop-blur-sm text-xs font-medium text-muted-foreground shadow-sm"
+              className="border-border bg-card/60 text-muted-foreground inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-medium shadow-sm backdrop-blur-sm"
             >
               {tag.label}
             </motion.span>
@@ -106,22 +106,22 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 backdrop-blur-sm px-4 py-1.5 text-sm text-muted-foreground">
+          <span className="border-border bg-card/50 text-muted-foreground inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-sm backdrop-blur-sm">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
             </span>
             {t("openToOpportunities")}
           </span>
         </motion.div>
 
         {/* Name — word-by-word reveal (Pure CSS for optimal LCP) */}
-        <h1 className="mt-6 text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.2]">
+        <h1 className="mt-6 text-6xl leading-[1.2] font-extrabold tracking-tight sm:text-7xl lg:text-8xl">
           <span className="flex flex-wrap justify-center gap-x-4">
             {nameWords.map((word, i) => (
               <span
                 key={word}
-                className="gradient-text pb-2 block hero-text-reveal"
+                className="gradient-text hero-text-reveal block pb-2"
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
                 {word}
@@ -137,13 +137,13 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.65 }}
           className="mt-4 flex items-center justify-center gap-3"
         >
-          <div className="h-px w-12 bg-gradient-to-r from-transparent to-border" />
-          <p className="text-lg sm:text-xl text-muted-foreground font-medium tracking-wide uppercase text-[0.85em]">
+          <div className="to-border h-px w-12 bg-gradient-to-r from-transparent" />
+          <p className="text-muted-foreground text-lg text-[0.85em] font-medium tracking-wide uppercase sm:text-xl">
             {t("role")}
-            <span className="mx-2 text-primary">·</span>
+            <span className="text-primary mx-2">·</span>
             {t("specialist")}
           </p>
-          <div className="h-px w-12 bg-gradient-to-l from-transparent to-border" />
+          <div className="to-border h-px w-12 bg-gradient-to-l from-transparent" />
         </motion.div>
 
         {/* Value prop */}
@@ -151,7 +151,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.75 }}
-          className="mt-6 text-base sm:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed"
+          className="text-muted-foreground mx-auto mt-6 max-w-xl text-base leading-relaxed sm:text-lg"
         >
           {t("description_1")}{" "}
           <span className="text-foreground font-semibold">
@@ -173,7 +173,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.85 }}
-          className="mt-10 grid grid-cols-4 max-w-lg mx-auto divide-x divide-border border border-border rounded-2xl overflow-hidden bg-card/40 backdrop-blur-sm"
+          className="divide-border border-border bg-card/40 mx-auto mt-10 grid max-w-lg grid-cols-4 divide-x overflow-hidden rounded-2xl border backdrop-blur-sm"
         >
           {[
             { value: t("yearsExp"), label: t("yearsExpLabel") },
@@ -182,10 +182,10 @@ export function Hero() {
             { value: t("teamSize"), label: t("teamSizeLabel") },
           ].map((stat) => (
             <div key={stat.label} className="py-4 text-center">
-              <div className="text-2xl font-bold gradient-text">
+              <div className="gradient-text text-2xl font-bold">
                 {stat.value}
               </div>
-              <div className="text-xs text-muted-foreground mt-0.5">
+              <div className="text-muted-foreground mt-0.5 text-xs">
                 {stat.label}
               </div>
             </div>
@@ -200,13 +200,13 @@ export function Hero() {
           className="mt-8 flex flex-wrap items-center justify-center gap-4"
         >
           {/* Primary CTA with glow ring */}
-          <div className="relative group">
-            <div className="absolute -inset-0.5 gradient-border rounded-xl opacity-60 group-hover:opacity-100 blur transition-all duration-300" />
+          <div className="group relative">
+            <div className="gradient-border absolute -inset-0.5 rounded-xl opacity-60 blur transition-all duration-300 group-hover:opacity-100" />
             <a
               href="mailto:thinhnguyendn931911@gmail.com"
               className={cn(
                 buttonVariants({ size: "lg" }),
-                "relative gap-2 gradient-border text-white border-0 cursor-pointer",
+                "gradient-border relative cursor-pointer gap-2 border-0 text-white",
               )}
             >
               <Mail className="h-4 w-4" />
@@ -218,7 +218,7 @@ export function Hero() {
             href="#experience"
             className={cn(
               buttonVariants({ variant: "outline", size: "lg" }),
-              "gap-2 cursor-pointer backdrop-blur-sm",
+              "cursor-pointer gap-2 backdrop-blur-sm",
             )}
           >
             <Sparkles className="h-4 w-4" />
@@ -232,16 +232,16 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.4 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2"
       >
-        <span className="text-xs text-muted-foreground/50 tracking-widest uppercase">
+        <span className="text-muted-foreground/50 text-xs tracking-widest uppercase">
           {t("scroll")}
         </span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
         >
-          <ArrowDown className="h-4 w-4 text-muted-foreground/40" />
+          <ArrowDown className="text-muted-foreground/40 h-4 w-4" />
         </motion.div>
       </motion.div>
     </section>

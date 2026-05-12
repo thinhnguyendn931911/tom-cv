@@ -33,27 +33,27 @@ export function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-background/80 backdrop-blur-xl border-b border-border shadow-sm"
+            ? "bg-background/80 border-border border-b shadow-sm backdrop-blur-xl"
             : "bg-transparent"
         }`}
       >
-        <nav className="mx-auto max-w-6xl flex items-center justify-between px-6 py-4">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a
             href="#"
-            className="text-lg font-bold tracking-tight gradient-text"
+            className="gradient-text text-lg font-bold tracking-tight"
           >
             {t("brand")}
           </a>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden items-center gap-1 md:flex">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-accent"
+                className="text-muted-foreground hover:text-foreground hover:bg-accent rounded-md px-3 py-2 text-sm font-medium transition-colors"
               >
                 {link.label}
               </a>
@@ -70,7 +70,7 @@ export function Navbar() {
             <ThemeToggle />
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+              className="text-muted-foreground hover:text-foreground p-2 transition-colors"
               aria-label="Toggle menu"
             >
               {mobileOpen ? (
@@ -91,7 +91,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 pt-20 bg-background/95 backdrop-blur-xl md:hidden"
+            className="bg-background/95 fixed inset-0 z-40 pt-20 backdrop-blur-xl md:hidden"
           >
             <div className="flex flex-col items-center gap-2 p-6">
               {navLinks.map((link) => (
@@ -99,7 +99,7 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="w-full text-center px-4 py-3 text-lg font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-lg transition-colors"
+                  className="text-muted-foreground hover:text-foreground hover:bg-accent w-full rounded-lg px-4 py-3 text-center text-lg font-medium transition-colors"
                 >
                   {link.label}
                 </a>

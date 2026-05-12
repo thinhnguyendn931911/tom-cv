@@ -88,7 +88,7 @@ export default async function RootLayout({
           </Script>
         </LazyLoadOnInteraction>
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-full flex-col">
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}

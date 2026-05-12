@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 export function Contact() {
   const t = useTranslations("Contact");
   return (
-    <section id="contact" className="py-16 px-6">
+    <section id="contact" className="px-6 py-16">
       <div className="mx-auto max-w-4xl">
         <m.div
           initial={{ opacity: 0, y: 30 }}
@@ -18,14 +18,14 @@ export function Contact() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center"
         >
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+          <h2 className="text-primary mb-2 text-sm font-semibold tracking-widest uppercase">
             {t("title")}
           </h2>
-          <h3 className="text-3xl sm:text-4xl font-bold tracking-tight">
+          <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("heading_1")}{" "}
             <span className="gradient-text">{t("heading_2")}</span>
           </h3>
-          <p className="mt-3 text-muted-foreground max-w-lg mx-auto">
+          <p className="text-muted-foreground mx-auto mt-3 max-w-lg">
             {t("description")}
           </p>
         </m.div>
@@ -58,18 +58,18 @@ export function Contact() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="flex items-center gap-3 px-4 py-2.5 rounded-xl border border-border bg-card/50 hover:bg-card hover:border-primary/20 transition-all"
+                className="border-border bg-card/50 hover:bg-card hover:border-primary/20 flex items-center gap-3 rounded-xl border px-4 py-2.5 transition-all"
               >
-                <item.icon className="h-4 w-4 text-primary shrink-0" />
+                <item.icon className="text-primary h-4 w-4 shrink-0" />
                 {item.href ? (
                   <a
                     href={item.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-muted-foreground hover:text-foreground text-sm transition-colors"
                   >
                     {item.label}
                   </a>
                 ) : (
-                  <span className="text-sm text-muted-foreground">
+                  <span className="text-muted-foreground text-sm">
                     {item.label}
                   </span>
                 )}
@@ -82,7 +82,7 @@ export function Contact() {
             href="mailto:thinhnguyendn931911@gmail.com"
             className={cn(
               buttonVariants({ size: "lg" }),
-              "mt-4 gap-2 gradient-border text-white border-0 hover:opacity-90 transition-opacity cursor-pointer",
+              "gradient-border mt-4 cursor-pointer gap-2 border-0 text-white transition-opacity hover:opacity-90",
             )}
           >
             <Mail className="h-4 w-4" />
@@ -90,9 +90,9 @@ export function Contact() {
           </a>
 
           {/* Languages */}
-          <div className="mt-6 flex items-center gap-4 text-sm text-muted-foreground">
+          <div className="text-muted-foreground mt-6 flex items-center gap-4 text-sm">
             <span>{t("lang_vi")}</span>
-            <span className="w-px h-4 bg-border" />
+            <span className="bg-border h-4 w-px" />
             <span>{t("lang_en")}</span>
           </div>
         </m.div>

@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 export function About() {
   const t = useTranslations("About");
   return (
-    <section id="about" className="py-16 px-6">
+    <section id="about" className="px-6 py-16">
       <div className="mx-auto max-w-4xl">
         <m.div
           initial={{ opacity: 0, y: 30 }}
@@ -15,10 +15,10 @@ export function About() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+          <h2 className="text-primary mb-2 text-sm font-semibold tracking-widest uppercase">
             {t("title")}
           </h2>
-          <h3 className="text-3xl sm:text-4xl font-bold tracking-tight">
+          <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("heading_1")}{" "}
             <span className="gradient-text">{t("heading_2")}</span>
           </h3>
@@ -29,7 +29,7 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-3xl"
+          className="text-muted-foreground mt-6 max-w-3xl text-lg leading-relaxed"
           dangerouslySetInnerHTML={{ __html: t.raw("description") }}
         />
 
@@ -56,9 +56,9 @@ export function About() {
           ].map((item) => (
             <div
               key={item.label}
-              className="flex items-center gap-2 text-sm text-muted-foreground"
+              className="text-muted-foreground flex items-center gap-2 text-sm"
             >
-              <item.icon className="h-4 w-4 text-primary" />
+              <item.icon className="text-primary h-4 w-4" />
               {item.label}
             </div>
           ))}

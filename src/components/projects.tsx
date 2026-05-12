@@ -44,8 +44,8 @@ export function Projects() {
   };
 
   return (
-    <section id="projects" className="py-16 px-6 relative">
-      <div className="absolute inset-0 grid-pattern opacity-50" />
+    <section id="projects" className="relative px-6 py-16">
+      <div className="grid-pattern absolute inset-0 opacity-50" />
 
       <div className="relative mx-auto max-w-6xl">
         <m.div
@@ -55,19 +55,19 @@ export function Projects() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center"
         >
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+          <h2 className="text-primary mb-2 text-sm font-semibold tracking-widest uppercase">
             {t("title")}
           </h2>
-          <h3 className="text-3xl sm:text-4xl font-bold tracking-tight">
+          <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("heading_1")}{" "}
             <span className="gradient-text">{t("heading_2")}</span>
           </h3>
-          <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
+          <p className="text-muted-foreground mx-auto mt-3 max-w-xl">
             {t("description")}
           </p>
         </m.div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projectKeys.map((key, i) => {
             const Icon = projectIcons[key] || Layers;
             const highlights: string[] = t.raw(`items.${key}.highlights`);
@@ -79,21 +79,21 @@ export function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 viewport={{ once: true, margin: "-50px" }}
-                className="group relative rounded-xl border border-border bg-card/50 hover:bg-card p-4 transition-all duration-300 hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1"
+                className="group border-border bg-card/50 hover:bg-card hover:border-primary/20 hover:shadow-primary/5 relative rounded-xl border p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
                 {/* Icon & title */}
                 <div className="flex items-start justify-between">
-                  <div className="p-2.5 rounded-lg bg-primary/10 text-primary">
+                  <div className="bg-primary/10 text-primary rounded-lg p-2.5">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <ArrowUpRight className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <ArrowUpRight className="text-muted-foreground h-4 w-4 opacity-0 transition-opacity group-hover:opacity-100" />
                 </div>
 
-                <h4 className="mt-4 text-lg font-semibold text-foreground">
+                <h4 className="text-foreground mt-4 text-lg font-semibold">
                   {t(`items.${key}.title`)}
                 </h4>
                 {t.has(`items.${key}.company`) && (
-                  <p className="text-sm text-primary font-medium mt-0.5">
+                  <p className="text-primary mt-0.5 text-sm font-medium">
                     {t(`items.${key}.company`)}
                   </p>
                 )}
@@ -103,7 +103,7 @@ export function Projects() {
                   {highlights.map((h, hi) => (
                     <li
                       key={hi}
-                      className="text-sm text-muted-foreground leading-relaxed"
+                      className="text-muted-foreground text-sm leading-relaxed"
                     >
                       {h}
                     </li>
@@ -111,10 +111,10 @@ export function Projects() {
                 </ul>
 
                 {/* Meta row */}
-                <div className="mt-4 flex items-center gap-2 text-xs text-muted-foreground flex-wrap">
+                <div className="text-muted-foreground mt-4 flex flex-wrap items-center gap-2 text-xs">
                   <Badge
                     variant="secondary"
-                    className="text-xs font-normal h-auto whitespace-normal text-left"
+                    className="h-auto text-left text-xs font-normal whitespace-normal"
                   >
                     {t(`items.${key}.role`)}
                   </Badge>
@@ -131,7 +131,7 @@ export function Projects() {
                     <Badge
                       key={tech}
                       variant="outline"
-                      className="text-xs font-normal text-muted-foreground h-auto whitespace-normal"
+                      className="text-muted-foreground h-auto text-xs font-normal whitespace-normal"
                     >
                       {tech}
                     </Badge>
