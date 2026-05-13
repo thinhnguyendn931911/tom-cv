@@ -10,10 +10,12 @@ import {
   Shield,
   BarChart3,
   Monitor,
+  Sparkles,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const projectIcons: Record<string, React.ElementType> = {
+  aiPlanning: Sparkles,
   chain: Globe,
   diginex: BarChart3,
   supply: Shield,
@@ -23,12 +25,23 @@ const projectIcons: Record<string, React.ElementType> = {
 
 export function Projects() {
   const t = useTranslations("Projects");
-  const projectKeys = ["chain", "diginex", "supply", "qnet", "zmining"];
+  const projectKeys = [
+    "aiPlanning",
+    "chain",
+    "diginex",
+    "supply",
+    "qnet",
+    "zmining",
+  ];
 
-  // Since we need to match techStack with translations but the data was not moved to json fully (techStack was not in json),
-  // we will reconstruct the techStack here for simplicity as it wasn't extracted to messages earlier.
-  // Wait, I didn't add techStack to messages. Let's add them locally.
   const techStacks: Record<string, string[]> = {
+    aiPlanning: [
+      "Next.js",
+      "AI-assisted planning",
+      "Jira release analysis",
+      "AI estimation",
+      "Resource planning",
+    ],
     chain: ["Next.js", "Nuxt.js", "PHP"],
     diginex: [
       "TypeScript",

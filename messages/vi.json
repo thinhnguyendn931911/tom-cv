@@ -102,6 +102,15 @@
     "heading_2": "tiêu biểu",
     "description": "Các dự án thể hiện tác động ở quy mô lớn, từ các nền tảng hàng triệu người dùng đến các giải pháp doanh nghiệp.",
     "items": {
+      "aiPlanning": {
+        "title": "Dự án Lập kế hoạch AI",
+        "role": "Quản lý Dự án",
+        "highlights": [
+          "Xây dựng hệ thống lập kế hoạch ứng dụng AI để quét các bản phát hành dự án trên Jira và ước lượng thời gian bàn giao dựa trên nguồn lực nhóm đã cấu hình.",
+          "Tạo các kế hoạch phát hành chi tiết bao gồm các cột mốc, ngày bắt đầu, ngày kết thúc, biểu đồ Gantt và phân bổ nguồn lực.",
+          "Nâng cao khả năng dự đoán và độ chính xác của kế hoạch phát hành bằng cách kết hợp dữ liệu Jira, ước lượng bằng AI và năng lực bàn giao có thể cấu hình."
+        ]
+      },
       "chain": {
         "title": "Chuỗi website game trực tuyến",
         "company": "Nền tảng triệu người dùng",
@@ -156,6 +165,7 @@
     "coreCompetencies": [
       "Xây dựng web hiệu suất cao (Lighthouse >90, tối ưu Core Web Vitals)",
       "Kiến trúc mã nguồn chia sẻ/tái sử dụng (mở rộng từ 1 → 10 sản phẩm trong 12 tháng)",
+      "Lập kế hoạch, ước lượng và phân bổ nguồn lực phát hành có hỗ trợ AI",
       "Lãnh đạo và hướng dẫn kỹ thuật (quy mô nhóm ~20 người)",
       "Kiến trúc hệ thống và các mẫu thiết kế tái sử dụng",
       "Tiêu chuẩn kỹ thuật, chất lượng code review & bộ công cụ DX",
@@ -166,6 +176,10 @@
       "languages": {
         "name": "Ngôn ngữ / Runtime",
         "skills": ["TypeScript", "JavaScript", "Node.js", "PHP"]
+      },
+      "ai": {
+        "name": "AI",
+        "skills": ["Claude", "OpenAI", "Cursor", "OpenSpec"]
       },
       "frontend": {
         "name": "Front-end",
@@ -211,8 +225,12 @@
         "skills": ["Jest", "Vitest"]
       },
       "quality": {
-        "name": "Chất lượng & Tự động hóa",
+        "name": "Chất lượng",
         "skills": ["ESLint", "Prettier", "SonarQube", "HTMLHint", "Stylint"]
+      },
+      "automation": {
+        "name": "Tự động hóa",
+        "skills": ["Puppeteer", "Playwright"]
       },
       "auth": {
         "name": "Xác thực & Bảo mật",

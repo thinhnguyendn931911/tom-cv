@@ -10,6 +10,7 @@ export function Skills() {
   const coreCompetencies: string[] = t.raw("coreCompetencies");
   const categoryKeys = [
     "languages",
+    "ai",
     "frontend",
     "backend",
     "desktop",
@@ -18,6 +19,7 @@ export function Skills() {
     "build",
     "testing",
     "quality",
+    "automation",
     "auth",
     "version",
     "other",

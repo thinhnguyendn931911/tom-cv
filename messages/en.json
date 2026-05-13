@@ -102,6 +102,15 @@
     "heading_2": "work",
     "description": "A selection of projects that showcase impact at scale, from million-user platforms to enterprise solutions.",
     "items": {
+      "aiPlanning": {
+        "title": "AI Planning Project",
+        "role": "Project Manager",
+        "highlights": [
+          "Built an AI-powered planning system that scans Jira project releases and estimates delivery timelines based on configured team resources.",
+          "Generated detailed release plans including milestones, start dates, end dates, Gantt charts, and resource allocation.",
+          "Improved release visibility and planning accuracy by combining Jira data, AI estimation, and configurable delivery capacity."
+        ]
+      },
       "chain": {
         "title": "Chain of Online Game Websites",
         "company": "Million-User Platform",
@@ -156,6 +165,7 @@
     "coreCompetencies": [
       "High-performance web delivery (Lighthouse >90, Core Web Vitals optimization)",
       "Shared/reusable codebase architecture (scaled 1 → 10 products in 12 months)",
+      "AI-assisted planning, estimation, and resource-based release planning",
       "Technical leadership & mentoring (teams up to ~20)",
       "System architecture & reusable design patterns",
       "Engineering standards, code review quality & DX tooling",
@@ -166,6 +176,10 @@
       "languages": {
         "name": "Languages / Runtime",
         "skills": ["TypeScript", "JavaScript", "Node.js", "PHP"]
+      },
+      "ai": {
+        "name": "AI",
+        "skills": ["Claude", "OpenAI", "Cursor", "OpenSpec"]
       },
       "frontend": {
         "name": "Front-end",
@@ -211,8 +225,12 @@
         "skills": ["Jest", "Vitest"]
       },
       "quality": {
-        "name": "Quality & Automation",
+        "name": "Quality",
         "skills": ["ESLint", "Prettier", "SonarQube", "HTMLHint", "Stylint"]
+      },
+      "automation": {
+        "name": "Automation",
+        "skills": ["Puppeteer", "Playwright"]
       },
       "auth": {
         "name": "Auth & Security",
