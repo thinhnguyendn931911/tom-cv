@@ -10,16 +10,16 @@
   "Hero": {
     "openToOpportunities": "Sẵn sàng đón nhận cơ hội mới",
     "name": "Thịnh Nguyễn",
-    "role": "Kỹ sư Phần mềm Cao cấp",
-    "specialist": "Chuyên gia Front-end",
-    "description_1": "8 năm xây dựng các nền tảng web phục vụ",
+    "role": "Quản lý Dự án",
+    "specialist": "Kỹ sư Phần mềm Cao cấp",
+    "description_1": "10 năm xây dựng các nền tảng web phục vụ",
     "description_2": "hàng triệu người dùng",
     "description_3": ". Lighthouse",
     "description_4": ">90",
     "description_5": ". Mở rộng",
     "description_6": "từ 1 lên 10 sản phẩm",
     "description_7": "trong 12 tháng.",
-    "yearsExp": "8+",
+    "yearsExp": "10+",
     "yearsExpLabel": "Năm",
     "productsShipped": "10",
     "productsShippedLabel": "Sản phẩm",
@@ -36,7 +36,7 @@
     "title": "Giới thiệu",
     "heading_1": "Xây dựng web,",
     "heading_2": "ở quy mô lớn",
-    "description": "Kỹ sư Phần mềm Cao cấp với 8 năm kinh nghiệm xây dựng các ứng dụng web hiệu năng cao, dễ mở rộng trên cả môi trường front-end và full-stack. Chuyên sâu về <bold>Vue.js, React, Next.js và Nuxt.js</bold> với kiến thức vững chắc về kiến trúc chia sẻ mã nguồn — gần đây nhất đã mở rộng nền tảng front-end từ 1 lên 10 sản phẩm trong vòng chưa đầy một năm.",
+    "description": "Kỹ sư Phần mềm Cao cấp định hướng kết quả, sở hữu chứng chỉ PMP, với 10 năm kinh nghiệm dẫn dắt việc bàn giao các sản phẩm web có khả năng mở rộng từ ý tưởng đến ra mắt. Nổi bật với khả năng dẫn dắt các nhóm liên chức năng lên đến <bold>20 kỹ sư</bold> trong khi vẫn duy trì tiêu chuẩn cao về chất lượng và tiến độ — gần đây nhất đã mở rộng nền tảng front-end từ <bold>1 lên 10 sản phẩm</bold> trong chưa đầy một năm ở quy mô hàng triệu người dùng, cùng thành tích vững chắc về tối ưu hiệu suất, thiết kế hệ thống tái sử dụng và <bold>lập kế hoạch có hỗ trợ AI</bold>.",
     "location": "Đà Nẵng, Việt Nam",
     "certification": "Chứng chỉ PMP (PMI, 2025)",
     "award": "Giải thưởng Hiệu suất Xuất sắc"
@@ -45,17 +45,17 @@
     "title": "Kinh nghiệm",
     "heading_1": "Hành trình",
     "heading_2": "sự nghiệp",
-    "description": "Hơn 8 năm xây dựng và dẫn dắt các nhóm kỹ thuật hiệu suất cao.",
+    "description": "Hơn 10 năm xây dựng và dẫn dắt các nhóm kỹ thuật hiệu suất cao.",
     "viewDetails": "Xem chi tiết",
     "collapse": "Thu gọn",
     "roles": {
       "lazarus": {
-        "role": "Quản lý Dự án (Technical Lead)",
+        "role": "Quản lý Dự án",
         "company": "Lazarus Tech",
         "period": "2024 – Hiện tại",
         "teamSize": "~30",
         "highlights": [
-          "Mở rộng chuỗi sản phẩm trang web game trực tuyến từ 1 lên 10 sản phẩm hoạt động trong chưa đầy 12 tháng bằng cách xây dựng kiến trúc front-end dùng chung (Next.js/Nuxt.js) với các thư viện component có thể tái sử dụng và các mẫu thiết kế chuẩn hóa.",
+          "Mở rộng chuỗi sản phẩm website thị trường từ 1 lên 10 sản phẩm hoạt động trong chưa đầy 12 tháng bằng cách xây dựng kiến trúc front-end dùng chung (Next.js/Nuxt.js) với các thư viện component có thể tái sử dụng và các mẫu thiết kế chuẩn hóa.",
           "Thúc đẩy các sáng kiến hiệu suất front-end đạt điểm số Lighthouse >90 trên cả máy tính và thiết bị di động, cải thiện Core Web Vitals (LCP, CLS, FID) trong điều kiện lưu lượng truy cập cao phục vụ hàng triệu người dùng.",
           "Đảm bảo phát hành đúng hạn qua các quý liên tiếp bằng cách giới thiệu quy trình lập kế hoạch sprint có cấu trúc, theo dõi các trở ngại và quy trình làm việc kỹ thuật — không bỏ lỡ bất kỳ thời hạn nào với khách hàng.",
           "Điều phối các bên liên quan về kỹ thuật, sản phẩm và vận hành trên cả module front-end (Next.js/Nuxt.js) và back-end (PHP); quản lý rủi ro giao hàng và các phụ thuộc để đảm bảo việc phát hành có thể dự đoán được."
@@ -112,7 +112,7 @@
         ]
       },
       "chain": {
-        "title": "Chuỗi website game trực tuyến",
+        "title": "Chuỗi website",
         "company": "Nền tảng triệu người dùng",
         "role": "Quản lý Dự án",
         "teamSize": "~30",
@@ -179,7 +179,7 @@
       },
       "ai": {
         "name": "AI",
-        "skills": ["Claude", "OpenAI", "Cursor", "OpenSpec"]
+        "skills": ["Claude", "OpenAI", "Cursor", "OpenSpec", "Superpowers", "SpecKit"]
       },
       "frontend": {
         "name": "Front-end",
@@ -200,7 +200,7 @@
       },
       "desktop": {
         "name": "Desktop",
-        "skills": ["Electron"]
+        "skills": ["Electron", "Tauri"]
       },
       "database": {
         "name": "Cơ sở dữ liệu",

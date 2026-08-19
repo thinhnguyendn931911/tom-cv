@@ -47,8 +47,8 @@ export function Contact() {
               },
               {
                 icon: Phone,
-                label: "+84 896 212 509",
-                href: "tel:+84896212509",
+                label: "+84 974 559 593",
+                href: "tel:+84974559593",
               },
               {
                 icon: MapPin,

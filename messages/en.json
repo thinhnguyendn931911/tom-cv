@@ -10,16 +10,16 @@
   "Hero": {
     "openToOpportunities": "Open to opportunities",
     "name": "Thinh Nguyen",
-    "role": "Senior Software Engineer",
-    "specialist": "Front-end Specialist",
-    "description_1": "8 years scaling web platforms to",
+    "role": "Project Manager",
+    "specialist": "Senior Software Engineer",
+    "description_1": "10 years scaling web platforms to",
     "description_2": "millions of users",
     "description_3": ". Lighthouse",
     "description_4": ">90",
     "description_5": ". Scaled",
     "description_6": "1 → 10 products",
     "description_7": "in 12 months.",
-    "yearsExp": "8+",
+    "yearsExp": "10+",
     "yearsExpLabel": "Years",
     "productsShipped": "10",
     "productsShippedLabel": "Products",
@@ -36,7 +36,7 @@
     "title": "About",
     "heading_1": "Building the web,",
     "heading_2": "at scale",
-    "description": "Senior Software Engineer with 8 years of experience building high-performance, scalable web applications across front-end and full-stack environments. Specialized in <bold>Vue.js, React, Next.js, and Nuxt.js</bold> with deep expertise in shared codebase architecture — most recently scaling a front-end platform from 1 to 10 products in under a year.",
+    "description": "Results-driven Senior Software Engineer and PMP-certified technologist with 10 years of experience leading the delivery of scalable web products from concept to launch. Known for driving cross-functional teams of up to <bold>20 engineers</bold> while maintaining high standards for quality and on-time execution — most recently scaling a front-end platform from <bold>1 to 10 products</bold> in under a year at million-user scale, with a strong track record of performance improvements, reusable system design, and <bold>AI-assisted planning</bold>.",
     "location": "Da Nang, Vietnam",
     "certification": "PMP-Certified (PMI, 2025)",
     "award": "Outstanding Performance Award"
@@ -45,17 +45,17 @@
     "title": "Experience",
     "heading_1": "Professional",
     "heading_2": "journey",
-    "description": "8+ years of building and leading high-performance engineering teams.",
+    "description": "10+ years of building and leading high-performance engineering teams.",
     "viewDetails": "View details",
     "collapse": "Collapse",
     "roles": {
       "lazarus": {
-        "role": "Project Manager (Technical Lead)",
+        "role": "Project Manager",
         "company": "Lazarus Tech",
         "period": "2024 – Present",
         "teamSize": "~30",
         "highlights": [
-          "Scaled a chain of online game website products from 1 to 10 live products in under 12 months by architecting a shared front-end codebase (Next.js/Nuxt.js) with reusable component libraries and standardized design patterns.",
+          "Scaled a chain of market website products from 1 to 10 live products in under 12 months by architecting a shared front-end codebase (Next.js/Nuxt.js) with reusable component libraries and standardized design patterns.",
           "Drove front-end performance initiatives achieving Lighthouse scores >90 on both desktop and mobile, improving Core Web Vitals (LCP, CLS, FID) under high-traffic conditions serving millions of users.",
           "Delivered on-time releases across consecutive quarters by introducing structured sprint planning, blocker tracking, and engineering workflows — zero missed customer-facing deadlines.",
           "Coordinated engineering, product, and operational stakeholders across front-end (Next.js/Nuxt.js) and back-end (PHP) modules; managed delivery risks and dependencies to ensure predictable releases."
@@ -112,7 +112,7 @@
         ]
       },
       "chain": {
-        "title": "Chain of Online Game Websites",
+        "title": "Chain of Websites",
         "company": "Million-User Platform",
         "role": "Project Manager",
         "teamSize": "~30",
@@ -179,7 +179,7 @@
       },
       "ai": {
         "name": "AI",
-        "skills": ["Claude", "OpenAI", "Cursor", "OpenSpec"]
+        "skills": ["Claude", "OpenAI", "Cursor", "OpenSpec", "Superpowers", "SpecKit"]
       },
       "frontend": {
         "name": "Front-end",
@@ -200,7 +200,7 @@
       },
       "desktop": {
         "name": "Desktop",
-        "skills": ["Electron"]
+        "skills": ["Electron", "Tauri"]
       },
       "database": {
         "name": "Database",
